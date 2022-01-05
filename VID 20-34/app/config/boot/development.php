@@ -9,7 +9,7 @@
  | painful debugging.
  */
 error_reporting(-1);
-ini_set('display_errors', '1');
+ini_set('display_errors', '0');
 
 /*
  |--------------------------------------------------------------------------
@@ -26,7 +26,7 @@ defined('SHOW_DEBUG_BACKTRACE') || define('SHOW_DEBUG_BACKTRACE', true);
  | DEBUG MODE
  |--------------------------------------------------------------------------
  | Debug mode is an experimental flag that can allow changes throughout
- | the system. It's not widely used currently, and may not survive
- | release of the framework.
+ | the system. This will control whether Kint is loaded, and a few other
+ | items. It can always be used within your own application too.
  */
 defined('CI_DEBUG') || define('CI_DEBUG', true);
