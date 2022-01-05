@@ -4,8 +4,8 @@
 
 <?php 
 
-    if (isset($_GET['page'])) {
-        $page = $_GET['page'];
+    if (isset($_GET['page_page'])) {
+        $page = $_GET['page_page'];
         $jumlah = 3;
         $no = ($jumlah * $page) - $jumlah + 1;
 
@@ -66,8 +66,9 @@
             <?php endforeach; ?>
 
         </table>
-        <?= $pager->makeLinks(1, $tampil, $total, 'bootstrap') ?>
 
+
+        <?= $pager->links('page','bootstrap') ?>
     </div>
 </div>
 
